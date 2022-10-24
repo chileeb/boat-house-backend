@@ -10,8 +10,8 @@ workspace:
       tools-ssh: 6822
       tools-phpmyadmin: 8090
       tools-nacos: 8848
-      apps-ruoyi-ui: 8000
-      apps-ruoyi-admin: 8080
+      apps-boathouse-ui: 8000
+      apps-boathouse-admin: 8080
     
     ide-type: vscode
     volumes: 
