@@ -19,10 +19,7 @@ workspace:
       ssh-key: true
     command:
       - cd /home/project
-      - mvn package
       - code --install-extension vscjava.vscode-java-pack
-      - cd ruoyi-ui && npm config set registry https://registry.npmmirror.com && npm install
-      - cd ../.ide/ && docker compose -f docker-compose-debug.yml up -d
       - code --install-extension ms-azuretools.vscode-docker
 
   kube-deploy-files: "k8s-deployment-vmlc.yaml" 
