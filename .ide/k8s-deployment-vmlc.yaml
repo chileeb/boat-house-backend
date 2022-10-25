@@ -25,7 +25,6 @@ spec:
     ports:
       - containerPort: 22
       - containerPort: 3000
-      - containerPort: 8848
       - containerPort: 8090
       - containerPort: 80
       - containerPort: 8080
@@ -48,10 +47,10 @@ spec:
     - name: "tools-phpmyadmin-8090"
       port: 8090
       targetPort: 8090
-    - name: "apps-ui-8000"
-      port: 8000
-      targetPort: 8000
-    - name: "apps-admin-8080"
+    - name: "apps-boathouse-frontend"
+      port: 4000
+      targetPort: 4000
+    - name: "apps-boathouse-backend"
       port: 8080
       targetPort: 8080
   selector:
